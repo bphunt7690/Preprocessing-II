@@ -1,5 +1,11 @@
 .home {
 
+  .header-img {
+    border-top: 2px dashed silver;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -58,14 +64,9 @@
       margin-bottom: 30px;
 
       .btn {
-        text-align: center;
-        padding: 10px;
-        border-radius: 10px;
-        width: 100px;
-        height: 30px;
-        background-color: teal;
-        font-size: 15px;
-        color: white;
+        .sizing(100px, 30px);       
+        .font(15px, white);
+        .decoration(center, 10px, 10px, teal);
       }
     }
   }
